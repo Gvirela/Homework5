@@ -1,0 +1,31 @@
+#include <iostream>
+
+int main()
+{
+    int arr[10] = {34, 56, 82, 37, 256, 866, 275, 3, 76, 1000};
+    std::cout << "Array: ";
+    for (int i = 0; i < 10; i++)
+    {
+        std::cout << arr[i] << " ";
+    }
+    std::cout << std::endl;
+
+    int min_numb = arr[0];
+    int max_numb = arr[0];
+
+    for ( int i = 1; i < 10; i++)
+    {
+        if (arr[i] < min_numb)
+        {
+            min_numb = arr[i];
+        }
+        if (arr[i] > max_numb)
+        {
+            max_numb = arr[i];
+        }
+    }
+    std::cout << "Minimum element: " << min_numb << std::endl;
+    std::cout << "Maximum element: " << max_numb << std::endl;
+    return 0;
+
+}
